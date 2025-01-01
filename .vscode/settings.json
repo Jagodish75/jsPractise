@@ -1,0 +1,5 @@
+{
+    "prettier.tabWidth": 4,
+    "files.autoSaveDelay": 1000,
+    "files.autoSaveWhenNoErrors": false
+}

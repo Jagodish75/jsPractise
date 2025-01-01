@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+.container {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+h1 {
+    padding: 36px;
+}
+img {
+    width: 80%;
+    height: 80%;
+}
+.picture {
+    display: flex;
+    justify-content: center;
+}
