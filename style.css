@@ -24,3 +24,17 @@ img {
     display: flex;
     justify-content: center;
 }
+button {
+    color: whitesmoke;
+    padding: 10px;
+    background-color: #065757;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+button:hover {
+    color: #065757;
+    background-color: whitesmoke;
+}
