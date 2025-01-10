@@ -37,4 +37,7 @@ form.addEventListener("submit", (e) => {
     //     ).toFixed(2);
     //     result.innerHTML = `Your BMI result is : <span>${bmi}</span>`;
     // }
+
+    /*********** Check the result is normail or not ***********/
+    if(result<){}
 });
