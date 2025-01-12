@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Event || use case</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                color: aliceblue;
+            }
+            body {
+                text-align: center;
+                padding: 36px;
+                background-color: #212121;
+            }
+            #container {
+                background-color: yellowgreen;
+                width: 50%;
+            }
+            li {
+                /* list-style: none; */
+                font-size: 32px;
+
+                margin: 8px;
+                border-bottom: 1px solid aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="container">
+            <li id="1"><span>Item-1</span></li>
+            <li id="2"><span>Item-2</span></li>
+            <li id="3"><span>Item-3</span></li>
+            <li id="4"><span>Item-4</span></li>
+            <li id="5"><a href="www.google.com">Google</a></li>
+        </ul>
+    </body>
+    <script>
+        // document.getElementById("3").addEventListener("click", () => {
+        //     console.log("Click");
+        // });
+        // document.getElementById("container").addEventListener(
+        //     "click",
+        //     (e) => {
+        //         console.log("Click in the container");
+        //     },
+        //     true
+        // );
+        // document.getElementById("4").addEventListener(
+        //     "click",
+        //     (e) => {
+        //         console.log("Click in the item-4");
+        //         e.stopPropagation();
+        //     },
+        //     false
+        // );
+        // document.getElementById("5").addEventListener(
+        //     "click",
+        //     (e) => {
+        //         console.log("Click in the google");
+        //         e.stopPropagation();
+        //         e.preventDefault();
+        //     },
+        //     true
+        // );
+        document.querySelector("#container").addEventListener("click", (e) => {
+            console.log(e.target.tagName);
+            if (e.target.tagName === "span") {
+                const removeIt = e.target.parentNode;
+                removeIt.remove();
+            }
+
+            // removeIt.parentNode.removeChild(removeIt);
+        });
+    </script>
+</html>
