@@ -1,5 +1,7 @@
 {
     "prettier.tabWidth": 4,
     "files.autoSaveDelay": 1000,
-    "files.autoSaveWhenNoErrors": false
+    "files.autoSaveWhenNoErrors": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
 }
